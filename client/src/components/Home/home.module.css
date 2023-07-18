@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffffc2;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    width: 250px;
+    height: 530px;
+    transition: transform 0.3s ease-in-out;
+    margin: 30px;
+    /* padding: 10px; */
+}
+
+.container:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    box-shadow:
+        0 15px 20px rgba(0, 0, 0, 0.9),
+        0 -2px 20px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+/* .container:not() {
+    filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+} */
+
+.img {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 5px 30px black;
+}
+
+.name,
+.temp,
+.weight {
+    width: 290px;
+    font-family: Sniglet, cursive;
+    color: #494949;
+    margin:5px;
+}
+
+.detail {
+    background-color: #ff0000;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 15px;
+    font-family: Sniglet, cursive;
+    color: white;
+}
+
+.detail:hover {
+    box-shadow:
+        0 15px 20px rgba(0, 0, 0, 0.9),
+        0 -2px 20px rgba(0, 0, 0, 0.9);
+    border: none;
+    cursor: pointer;
+}
