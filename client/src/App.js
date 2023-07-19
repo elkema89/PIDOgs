@@ -1,36 +1,35 @@
-import { Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllDogs } from './redux/actions';
 import './App.css';
-import LandingPage from './components/LandingPage/LandingPage.jsx';
-import Dogs from './components/Dogs/Dogs.jsx';
-import Detail from './components/Detail/Detail';
-import Footer from './components/Footer/Footer.jsx';
-import Nav from './components/Nav/Nav';
+import { Route } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Detail from './components/Detail/Detail.jsx';
+import Form from './components/Form/Form.jsx';
+import Home from './components/Home/Home.jsx';
+import Landing from './components/Landing/Landing.jsx';
+import Nav from './components/Nav/Nav.jsx';
 
 function App() {
-  const dispatch = useDispatch();
-  const dogs = useSelector(state => state.breeds);
-
-
-  useEffect(() => {
-    dispatch(getAllDogs());
-  }, [dispatch]);
-
   return (
-    <div className="App">
-      <Nav/>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<Dogs dogs={dogs} />} />
-        <Route path="/detail/:id" element={<Detail />} />
-      </Routes>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route path="/" render={({ location }) => {if (location.pathname !== '/') {
+                return (
+                  <>
+                    <Nav />
+                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/dogs/:id" component={Detail} />
+                    <Route exact path="/form" component={Form} />
+                    <Route exact path="/form/:id" component={Form} />
+                  </>
+                );
+              }
+            }}
+          />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-

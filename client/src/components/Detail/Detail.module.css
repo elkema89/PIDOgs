@@ -1,0 +1,44 @@
+.contentContainer {
+  background-color: #ffffff98;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  width: 50%;
+  
+}
+
+.titleName {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+}
+
+.temperaments {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detailAll {
+    background-image: url("../../../src/Extras/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

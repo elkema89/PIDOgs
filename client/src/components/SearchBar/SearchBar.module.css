@@ -1,13 +1,31 @@
-.searchInput{
-    height: 30px;
-    border-radius: 15px 0px 0px 15px;
-    text-align: center;
-    border: 0;
+.SearchBarContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.searchButton{
-    height: 30px;
-    border-radius: 0px 15px 15px 0px;
-    background-color: rgb(255, 255, 255);
-    border: 0;
-    border-left: 2px solid black;
+
+.SearchInput {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid black ;
+  border-radius: 30px 0 0 30px;
+}
+
+.SearchButton {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin-right: 2em;
+  border-radius:0 30px 30px 0;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.SearchButton:hover {
+  background-color: #f34c4c;
+}
+.Error {
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
 }

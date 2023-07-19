@@ -1,15 +1,10 @@
 body {
-  background-image: url(./assets/backGroundImg/backGround.jpg);
+  background-image: url(./Extras/dog-landing.png);
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size:cover;
-  margin: 0;
-  padding: 0;
+  background-size: cover;
   box-sizing: border-box;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
-  /* min-height: 100vh; */
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

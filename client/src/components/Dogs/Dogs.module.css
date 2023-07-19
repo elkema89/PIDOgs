@@ -1,6 +1,55 @@
-.dogCards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+.dogCard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  margin: 30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.content {
+  height: 500px;
+  background-color: #ffffffaa;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-5px); /*? Aplica una animación de desplazamiento hacia arriba al pasar el mouse por encima */
+}
+
+.temperaments {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.info {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.imageContainer {
+  width: 300px;
+  height: 300px;
+}
+
+.image {
+  width: 290px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.confirmationMessage {
+  color: green;
+  font-weight: bold;
 }

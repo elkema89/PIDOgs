@@ -1,66 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
-
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ffffffc2;
-    border-radius: 15px;
-    border: 2px solid #000000;
-    width: 250px;
-    height: 530px;
-    transition: transform 0.3s ease-in-out;
-    margin: 30px;
-    /* padding: 10px; */
+.homeAll {
+  background-image: url(../../Extras/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.container:hover {
-    transform: scale(1.15);
-    transition: transform 0.3s ease-in-out;
-    box-shadow:
-        0 15px 20px rgba(0, 0, 0, 0.9),
-        0 -2px 20px rgba(0, 0, 0, 0.9);
-    z-index: 1;
+.homeContainer {
+  text-align: center;
+  padding: 20px;
 }
 
-/* .container:not() {
-    filter: blur(3px);
-    transition: all 0.3s ease-in-out;
-} */
-
-.img {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    width: 250px;
-    height: 250px;
-    box-shadow: 0px 5px 30px black;
+.dogsContainer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.name,
-.temp,
-.weight {
-    width: 290px;
-    font-family: Sniglet, cursive;
-    color: #494949;
-    margin:5px;
+.titleContainer {
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 3px;
+  text-align: center;
+  box-shadow: 0px 4px 10px #0000001a;
 }
 
-.detail {
-    background-color: #ff0000;
-    border: 2px solid black;
-    height: 30px;
-    border-radius: 15px;
-    font-family: Sniglet, cursive;
-    color: white;
+.title {
+  font-size: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #000000c2;
 }
 
-.detail:hover {
-    box-shadow:
-        0 15px 20px rgba(0, 0, 0, 0.9),
-        0 -2px 20px rgba(0, 0, 0, 0.9);
-    border: none;
-    cursor: pointer;
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  background-color: #ffffffc7;
+  box-shadow: 0 5px 10px #0000001a;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.filterOption {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.filterTitle {
+  font-size: 18px;
+}
+
+.selectContainer {
+  display: flex;
+  align-items: center;
+  
+}
+
+.filterLabel {
+  font-size: 16px;
+  padding: 0 5px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 15px 0 0 15px;
+}
+
+.filterSelect {
+  height: 33px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 0 15px 15px 0;
+}
+
+.filterSelect:hover {
+  border-color: #007bff;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff4d;
+}
+
+.reloadButton {
+
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.reloadButton:hover {
+  background-color: #f34c4c;
 }
